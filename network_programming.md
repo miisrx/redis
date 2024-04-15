@@ -120,7 +120,7 @@ struct sockaddr_in {
 - `sin_port` must be in network byte order
 - *Note: `sin_zero` should be set to all 0 using `memset()` & is used to pad the struct to the same size as `sockaddr`*
 
-what is the `sin_addr`?
+what is `struct in_addr`?
 
 ### `struct in_addr`
 

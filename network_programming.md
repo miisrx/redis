@@ -104,6 +104,8 @@ struct sockaddr {
 - `sa_family` = `AF_INET` (IPv4) or `AF_INET6` (IPv6) for our purposes 
 - `sa_data` contains destination are & port # for the socket, BUT this is tedious to unpack by hand so use...
 
+### `struct sockaddr_in`
+
 ```C++
 // (IPv4 only--see struct sockaddr_in6 for IPv6)
 struct sockaddr_in {
@@ -120,6 +122,8 @@ struct sockaddr_in {
 
 what is the `sin_addr`?
 
+### `struct in_addr`
+
 ```C++
 // (IPv4 only--see struct in6_addr for IPv6)
 // Internet address (a structure for historical reasons)
@@ -127,6 +131,8 @@ struct in_addr {
   uint32_t s_addr; // that's a 32-bit int (4 bytes)
 };
 ```
+
+### `struct sockaddr_storage`
 
 ```C++
 struct sockaddr_storage {

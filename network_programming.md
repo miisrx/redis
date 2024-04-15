@@ -222,7 +222,7 @@ sometimes `bind()` may fail on server restart
   
 ```C++
 int yes=1;
-if (setsockopt(socket_fd,SOL_SOCKET,SO_REUSEADDR,&yes,sizeof yes) == -1) {
+if (setsockopt(socket_fd, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof(yes)) == -1) {
   perror("setsockopt");
   exit(1);
 }

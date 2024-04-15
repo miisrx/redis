@@ -110,8 +110,8 @@ struct sockaddr {
 // (IPv4 only--see struct sockaddr_in6 for IPv6)
 struct sockaddr_in {
   short int sin_family; // Address family, AF_INET
-  unsigned short int sin_port; // Port number
-  struct in_addr sin_addr; // Internet address
+  unsigned short int sin_port; // Port number (big endian)
+  struct in_addr sin_addr; // Internet address (Ipv4 addr)
   unsigned char sin_zero[8]; // Same size as struct sockaddr
 };
 ```
@@ -136,7 +136,7 @@ struct in_addr {
 
 ```C++
 struct sockaddr_storage {
-sa_family_t ss_family; // address family
+sa_family_t ss_family; // address family (has enough space for both)
 // all this is padding, implementation specific, ignore it:
 char __ss_pad1[_SS_PAD1SIZE];
 int64_t __ss_align;

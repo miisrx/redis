@@ -218,7 +218,7 @@ int bind(int sockfd, struct sockaddr *my_addr, int addrlen);
 ```
 
 - ports below 1024 are reserved
-- use ports up to 65535 (given that they aren't being used by another program)
+- use ports 1024<=p<=65535 (given that they aren't being used by another program)
 
 ### `SO_REUSEADDR` 
 

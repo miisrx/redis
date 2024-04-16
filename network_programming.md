@@ -1,4 +1,4 @@
-[Socket Programming Book](https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf)
+[Beej’s Guide to Network Programming](https://beej.us/guide/bgnet/pdf/bgnet_usl_c_1.pdf)
 
 # What is a socket
 

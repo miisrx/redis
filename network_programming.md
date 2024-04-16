@@ -213,7 +213,8 @@ int s = socket(res->ai_family, res->ai_socktype, res->ai_protocol);
 ## `bind()`
 
 - associates a socket with a port on your local machine
-- commonly done if you're going to `listen()` for incoming connections on a specific port; the port # is used by the kernel to match an incoming packet to a certain process's socket descriptor
+- commonly done if you're going to `listen()` for incoming connections on a specific port
+  - the port # is used by the kernel to match an incoming packet to a certain process's socket descriptor
 
 ```C++
 #include <sys/types.h>
@@ -223,6 +224,7 @@ int bind(int sockfd, struct sockaddr *my_addr, int addrlen);
 
 - ports below 1024 are reserved
 - use ports 1024<=p<=65535 (given that they aren't being used by another program)
+- if the port number is 0, the OS will auto choose a port
 
 ### `SO_REUSEADDR` 
 

@@ -94,6 +94,10 @@ struct addrinfo {
 
 ### `struct sockaddr`
 
+not really important; this is just the struct used by the API
+
+> just know that you need to cast to `struct sockaddr *`
+
 ```C++
 struct sockaddr {
   unsigned short sa_family; // address family, AF_xxx

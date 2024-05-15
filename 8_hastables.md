@@ -26,7 +26,7 @@ Which do we choose? Depends on whether or not the keys are sorted (note: sorting
 - chaining: each slot points to a collection of colliding keys
   - linked list (or vector for easier impl)
 
-### $\text{load factor} = \frac{\text{\# keys}}{\text{\# slots}}$
+### $\text{load factor} = \frac{\text{num keys}}{\text{num slots}}$
 
 open addressing:
 

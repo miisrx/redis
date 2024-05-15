@@ -19,3 +19,5 @@ is a collection of `(score, name)` pairs indexed:
   - offset a pair
 
 a sorted set may be usefule for displaying a scoreboard  
+
+continue: Rotations Keep the Order
